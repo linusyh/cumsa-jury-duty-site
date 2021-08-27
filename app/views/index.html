@@ -16,17 +16,17 @@
 	{% for document in documents %}
 		{% include "includes/documentBlock.html" %}
 	{% endfor %}
+	<h2 class="heading-font-27">Videos</h2>
+	<section class="document-block">
+		<div class="document-thumb hover-border-highlight">
+			<img src="/public/videos/thumbnails/Castle-Mound-1.m4v.png" onclick="showPlayer()">
+		</div>  
+		<div class="document-details">
+			<h3 class="hover-text-highlight" onclick="showPlayer()"><a>Supplementary - Castle Mound</a></h3>
+			<p> M4V, 1.58MB, 00:07 </p>
+		</div>
+	</section>
 </div>
-<h2 class="heading-font-27">Videos</h2>
-<section class="document-block">
-    <div class="document-thumb hover-border-highlight">
-        <img src="/public/videos/thumbnails/Castle-Mound-1.m4v.png" onclick="showPlayer()">
-    </div>  
-    <div class="document-details">
-    	<h3 class="hover-text-highlight" onclick="showPlayer()"><a>Supplementary - Castle Mound</a></h3>
-        <p> M4V, 1.58MB, 00:07 </p>
-    </div>
-</section> 
 <script>
 	video = document.getElementById('overlay-video-vertical');
 	logo_text = document.getElementsByClassName("govuk-header__logotype-text")[0]
