@@ -1,5 +1,9 @@
 @import "node_modules/govuk-frontend/govuk/settings/all";
 
+body {
+    overflow-x: hidden;
+}
+
 .document-block {
     width: 50ch;
     display: flex;

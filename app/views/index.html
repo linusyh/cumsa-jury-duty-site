@@ -10,11 +10,11 @@
 		<video id="overlay-video-vertical"> <source src="/public/videos/Castle-Mound-1.m4v" type='video/mp4'> </video>
 	</div>
 </div>
-{% include "includes/SubHeader.html"  	%}
+{% include "includes/subHeader.html"  	%}
 <h2 class="heading-font-27">Documents</h2>
 <div class="documents-container">
 	{% for document in documents %}
-		{% include "documentBlock.html" %}
+		{% include "includes/documentBlock.html" %}
 	{% endfor %}
 </div>
 <h2 class="heading-font-27">Videos</h2>
@@ -29,6 +29,8 @@
 </section> 
 <script>
 	video = document.getElementById('overlay-video-vertical');
+	logo_text = document.getElementsByClassName("govuk-header__logotype-text")[0]
+	logo_text.innerHTML = "CUMSA.ORG"
 
 	video.onended = hidePlayer;
 	video.onclick = hidePlayer
