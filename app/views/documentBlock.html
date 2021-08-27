@@ -1,0 +1,11 @@
+<section class="document-block">
+    <div class="document-thumb hover-border-highlight">
+        <a href="{{ document.file_url }}" rel="noreferrer noopener" target="_blank">
+            <img src="{{ document.thumb_url }}">
+        </a>
+    </div>  
+    <div class="document-details">
+        <h3 class="hover-text-highlight"> <a href="{{ document.file_url }}" rel="noreferrer noopener" target="_blank">{{document.title}}</a> </h3>
+        <p> PDF, {{ document.size }}, {{ document.page_count }} pages </p>
+    </div>
+</section>  

@@ -1,0 +1,81 @@
+@import "node_modules/govuk-frontend/govuk/settings/all";
+
+.document-block {
+    width: 50ch;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px;
+    flex-grow: 1;
+}
+
+.document-thumb {
+    border-width: 0.5ch;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.document-thumb {
+    display: flex;
+    align-items: center;
+}
+
+.document-thumb img {
+    width: 6rem;
+}
+
+.document-details {
+    margin-left: 2ch;
+}
+
+.heading-font-27 {
+    font-size: 27px;
+    line-height: 1.2;
+    font-family: $govuk-font-family;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.documents-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.document-details p {
+    font-size: 14px;
+    font-family: $govuk-font-family;
+}
+
+.hover-border-highlight:hover {
+    border-style: solid;
+    border-color: $govuk-focus-colour;
+}
+
+.hover-text-highlight:hover {
+    background-color: $govuk-focus-colour;
+}
+
+#overlay-video-vertical {
+    padding: 0.5ch;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    max-height: 90%;
+    max-width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay-video-player {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000d7;
+}

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Evidence Locker
+{% endblock %}
+
+{% block content %}
+<div id="overlay-video-player" onclick="hidePlayer()">
+	<div id="overlay-video-vertical-frame">
+		<video id="overlay-video-vertical"> <source src="/public/videos/Castle-Mound-1.m4v" type='video/mp4'> </video>
+	</div>
+</div>
+{% include "includes/SubHeader.html"  	%}
+<h2 class="heading-font-27">Documents</h2>
+<div class="documents-container">
+	{% for document in documents %}
+		{% include "documentBlock.html" %}
+	{% endfor %}
+</div>
+<h2 class="heading-font-27">Videos</h2>
+<section class="document-block">
+    <div class="document-thumb hover-border-highlight">
+        <img src="/public/videos/thumbnails/Castle-Mound-1.m4v.png" onclick="showPlayer()">
+    </div>  
+    <div class="document-details">
+    	<h3 class="hover-text-highlight" onclick="showPlayer()"><a>Supplementary - Castle Mound</a></h3>
+        <p> M4V, 1.58MB, 00:07 </p>
+    </div>
+</section> 
+<script>
+	video = document.getElementById('overlay-video-vertical');
+
+	video.onended = hidePlayer;
+	video.onclick = hidePlayer
+
+	var showPlayer = () => {
+		document.getElementById('overlay-video-player').style.display = 'block';
+		video.play();
+	}
+
+	var hidePlayer = () => {
+		document.getElementById('overlay-video-player').style.display = 'none';
+		video.pause();
+	}
+</script>
+{% endblock %}
+
+
