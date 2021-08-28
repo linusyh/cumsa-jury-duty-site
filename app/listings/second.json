@@ -1,0 +1,27 @@
+{
+    "documents": [
+        {
+            "file_url": "/public/documents/supp-insta.pdf",
+            "thumb_url": "/public/documents/thumbnails/supp-insta.pdf.png",
+            "title": "Supplementary - Instagram Stories",
+            "page_count": 2,
+            "size": "688KB"
+        },
+        {
+            "file_url": "/public/documents/supp-tcs.pdf",
+            "thumb_url": "/public/documents/thumbnails/supp-tcs.pdf.png",
+            "title": "Supplementary - TCS Article",
+            "page_count": 2,
+            "size": "73KB"
+        }
+    ],
+    "videos": [
+        {
+            "file_url": "/public/videos/Castle-Mound-1.m4v",
+            "thumb_url": "/public/videos/thumbnails/Castle-Mound-1.m4v.png",
+            "title": "Supplementary - Castle Mound",
+            "duration": "00:07",
+            "size": "1.58MB"
+        }
+    ]
+}

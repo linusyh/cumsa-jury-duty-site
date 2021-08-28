@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Evidence Locker
+{% endblock %}
+
+{% block content %}
+
+{% set action_url = 'supp' %}
+{% include "includes/passwordPrompt.html" %}
+<script>
+	var logo_text = document.getElementsByClassName("govuk-header__logotype-text")[0]
+	logo_text.innerHTML = "CUMSA.ORG"
+</script>
+
+{% endblock %}

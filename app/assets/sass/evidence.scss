@@ -4,30 +4,27 @@ body {
     overflow-x: hidden;
 }
 
-.document-block {
+.document-block, .video-block{
     width: 50ch;
     display: flex;
     align-items: center;
-    margin: 10px 0px 10px;
+    margin: 20px 0px 20px;
     flex-grow: 1;
 }
 
-.document-thumb {
+.document-thumb, .video-thumb {
     border-width: 0.5ch;
     border-style: solid;
     border-color: lightgray;
-}
-
-.document-thumb {
     display: flex;
     align-items: center;
 }
 
-.document-thumb img {
+.document-thumb img, .video-thumb img {
     width: 6rem;
 }
 
-.document-details {
+.document-details, .video-details {
     margin-left: 2ch;
 }
 
@@ -46,7 +43,7 @@ body {
     flex-wrap: wrap;
 }
 
-.document-details p {
+.document-details p, .video-details p {
     font-size: 14px;
     font-family: $govuk-font-family;
 }

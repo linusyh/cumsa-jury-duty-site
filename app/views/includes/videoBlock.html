@@ -1,0 +1,9 @@
+<section class="video-block">
+    <div class="video-thumb hover-border-highlight">
+        <img src="{{ video.thumb_url }}" onclick='showPlayer("{{ video.file_url }}")'>
+    </div>  
+    <div class="video-details">
+        <h3 class="hover-text-highlight" onclick='showPlayer("{{ video.file_url }}")'><a>{{ video.title }}</a></h3>
+        <p> M4V, {{ video.size }}, {{ video.duration }} </p>
+    </div>
+</section>

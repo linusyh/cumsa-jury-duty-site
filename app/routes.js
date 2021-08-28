@@ -1,10 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
-const HomepageConstructor = require("./assets/javascripts/homepageConstructor.js")
+const Constructor = require("./code/cumsa-constructor.js")
 
 // Add your routes here - above the module.exports line
 
-router.get('/', HomepageConstructor.construct)
+router.get('/', Constructor.constructMain)
+router.get('/supp', Constructor.constructSupp)
+router.get('/login', Constructor.constructLogin)
 
 module.exports = router

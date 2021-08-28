@@ -7,45 +7,51 @@
 {% block content %}
 <div id="overlay-video-player" onclick="hidePlayer()">
 	<div id="overlay-video-vertical-frame">
-		<video id="overlay-video-vertical"> <source src="/public/videos/Castle-Mound-1.m4v" type='video/mp4'> </video>
+		<video id="overlay-video-vertical"> <source  src="/public/videos/Castle-Mound-1.m4v" type='video/mp4'> </video>
 	</div>
 </div>
-{% include "includes/subHeader.html"  	%}
+{% include "includes/subHeader.html" %}
+
+{% if documents|length > 0 %}
 <h2 class="heading-font-27">Documents</h2>
 <div class="documents-container">
 	{% for document in documents %}
 		{% include "includes/documentBlock.html" %}
 	{% endfor %}
 </div>
+{% endif %}
+{% if videos|length > 0 %}
 <h2 class="heading-font-27">Videos</h2>
 <div class="documents-container">
-	<section class="document-block">
-		<div class="document-thumb hover-border-highlight">
-			<img src="/public/videos/thumbnails/Castle-Mound-1.m4v.png" onclick="showPlayer()">
-		</div>  
-		<div class="document-details">
-			<h3 class="hover-text-highlight" onclick="showPlayer()"><a>Supplementary - Castle Mound</a></h3>
-			<p> M4V, 1.58MB, 00:07 </p>
-		</div>
-	</section>
+	{% for video in videos %}
+		{% include "includes/videoBlock.html" %}
+	{% endfor %}
 </div>
+{% endif %}
 <script>
-	video = document.getElementById('overlay-video-vertical');
-	logo_text = document.getElementsByClassName("govuk-header__logotype-text")[0]
-	logo_text.innerHTML = "CUMSA.ORG"
+	var video = document.getElementById('overlay-video-vertical');
 
-	video.onended = hidePlayer;
-	video.onclick = hidePlayer
+	video.addEventListener('ended', hidePlayer);
+	video.onclick = hidePlayer;
 
-	var showPlayer = () => {
+	var showPlayer = (file_url) => {
 		document.getElementById('overlay-video-player').style.display = 'block';
+		var source = document.createElement('source');
+		source.setAttribute('src', file_url);
+		video.appendChild(source);
+		video.load();
 		video.play();
 	}
 
 	var hidePlayer = () => {
 		document.getElementById('overlay-video-player').style.display = 'none';
+		video.textContent = '';
 		video.pause();
 	}
+</script>
+<script>
+	var logo_text = document.getElementsByClassName("govuk-header__logotype-text")[0]
+	logo_text.innerHTML = "CUMSA.ORG"
 </script>
 {% endblock %}
 

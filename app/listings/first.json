@@ -1,0 +1,90 @@
+{
+    "documents": [
+        {
+            "file_url": "/public/documents/case-info.pdf",
+            "thumb_url": "/public/documents/thumbnails/case-info.pdf.png",
+            "title": "Case Information",
+            "page_count": 1,
+            "size": "116KB"
+        },
+        {
+            "file_url": "/public/documents/jury-summons.pdf",
+            "thumb_url": "/public/documents/thumbnails/jury-summons.pdf.png",
+            "title": "Jury Summons",
+            "page_count": 2,
+            "size": "97KB"
+        },
+        {
+            "file_url": "/public/documents/annex01.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex01.pdf.png",
+            "title": "Annex 1 - Background Information",
+            "page_count": 2,
+            "size": "445KB"
+        },
+        {
+            "file_url": "/public/documents/annex02.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex02.pdf.png",
+            "title": "Annex 2 - Police Statement",
+            "page_count": 1,
+            "size": "133KB"
+        },
+        {
+            "file_url": "/public/documents/annex03.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex03.pdf.png",
+            "title": "Annex 3 - Map",
+            "page_count": 1,
+            "size": "439KB"
+        },
+        {
+            "file_url": "/public/documents/annex04.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex04.pdf.png",
+            "title": "Annex 4 - Fountain",
+            "page_count": 1,
+            "size": "2,134KB"
+        },
+        {
+            "file_url": "/public/documents/annex05.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex05.pdf.png",
+            "title": "Annex 5 - First Defendant",
+            "page_count": 1,
+            "size": "123KB"
+        },
+        {
+            "file_url": "/public/documents/annex06.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex06.pdf.png",
+            "title": "Annex 6 - Second Defendant.pdf",
+            "page_count": 1,
+            "size": "126KB"
+        },
+        {
+            "file_url": "/public/documents/annex07.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex07.pdf.png",
+            "title": "Annex 7 - Third Defendant",
+            "page_count": 1,
+            "size": "126KB"
+        },
+        {
+            "file_url": "/public/documents/annex08.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex08.pdf.png",
+            "title": "Annex 8 - May Ball Dinner",
+            "page_count": 2,
+            "size": "3,128KB"
+        },
+        {
+            "file_url": "/public/documents/annex09.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex09.pdf.png",
+            "title": "Annex 9 - Various Statements",
+            "page_count": 1,
+            "size": "123KB"
+        },
+        {
+            "file_url": "/public/documents/annex10.pdf",
+            "thumb_url": "/public/documents/thumbnails/annex10.pdf.png",
+            "title": "Annex 10 - Scholars Book",
+            "page_count": 1,
+            "size": "258KB"
+        }
+    ],
+
+    "videos": []
+}

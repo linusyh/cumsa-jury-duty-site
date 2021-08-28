@@ -1,0 +1,16 @@
+[
+    {
+        "file_url": "/public/documents/supp-insta.pdf",
+        "thumb_url": "/public/documents/thumbnails/supp-insta.pdf.png",
+        "title": "Supplementary - Instagram Stories",
+        "page_count": 2,
+        "size": "688KB"
+    },
+    {
+        "file_url": "/public/documents/supp-tcs.pdf",
+        "thumb_url": "/public/documents/thumbnails/supp-tcs.pdf.png",
+        "title": "Supplementary - TCS Article",
+        "page_count": 2,
+        "size": "73KB"
+    }
+]
